@@ -1,0 +1,19 @@
+<div class="container mt-5">
+    <h2>Új kerékpár hozzáadása</h2>
+    <form (submit)="addBike()">
+      <div class="mb-3">
+        <label class="form-label">Név</label>
+        <input type="text" class="form-control" [(ngModel)]="bike.name" name="name" required />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Típus</label>
+        <input type="text" class="form-control" [(ngModel)]="bike.type" name="type" required />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Ár</label>
+        <input type="number" class="form-control" [(ngModel)]="bike.price" name="price" required />
+      </div>
+      <button type="submit" class="btn btn-success">Hozzáadás</button>
+    </form>
+  </div>
+  
